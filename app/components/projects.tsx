@@ -44,7 +44,7 @@ const ProjectSec: React.FC = () => {
   }, []);
 
   return (
-    <section ref={mainSecRef} className="bg-black relative ">
+    <section ref={mainSecRef} className="bg-black relative pb-16 ">
       <div className=" grid place-items-center  max-w-screen-xl  xl:mx-auto mx-5  z-10 relative py-36">
         <div className="w-full md:w-2/3">
           <div className=" w-fit  ">Projects</div>

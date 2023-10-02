@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const LandingSec: React.FC = () => {
   const titleSecRef = useRef(null);
   const aboutSecRef = useRef(null);
-  const projectSecRef = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

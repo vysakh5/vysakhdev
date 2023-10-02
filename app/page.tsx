@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import LandingSec from "@/app/components/landing";
 import ProjectSec from "@/app/components/projects";
+import SkilsSec from "@/app/components/skils";
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function Home() {
     <main>
       <LandingSec />
       <ProjectSec />
-      <div className="h-screen">1</div>
+      <SkilsSec />
       <div className="h-screen">1</div>
       <div className="h-screen">1</div>
     </main>
