@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --main-bg:#242323;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --main-bg:#242323;
+
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--main-bg);
+}
+
+
+.main-text-grd{
+  background-image:linear-gradient(45deg, rgb(193, 193, 193) 0%, rgb(255, 255, 255) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-btn{
+  /* background-color: #8349FF; */
+  background:linear-gradient(45deg, rgb(92,48,155) 0%, rgb(47,56,116) 100%);
+  background-size: 150% 150% ;
+  background-position: center;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.1s ease-in;
+}
+
+.primary-btn:hover{
+ 
+  background-position: 100% 0;
+  background-position: left;
+
+}
+
+.primary-btn::after{
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(99, 43, 253) 0%, rgb(51, 69, 181) 100%);
+  transition: all 0.5s;
+  z-index: -1;
+  border-radius: 5px;
+  filter: blur(15px);
+  opacity: 0.6;
+}
+
+.primary-btn:hover::after{
+  filter: blur(12px);
+  opacity: 0.9;
+  transform: translate(-15%, -15%);
+}
+
+.spin-anim{
+  animation: spin 10s ease-in infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-video-overlay{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.945) 40%, rgba(36, 35, 35, 0.496) 100%);
+}
