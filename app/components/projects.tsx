@@ -19,7 +19,6 @@ const ProjectSec: React.FC = () => {
         scrub: true,
         start: "-800px",
         end: "-250px",
-        markers: true,
       },
     });
 
@@ -46,8 +45,8 @@ const ProjectSec: React.FC = () => {
 
   return (
     <section ref={mainSecRef} className="bg-black relative ">
-      <div className=" flex flex-col md:flex-row max-w-screen-xl  xl:mx-auto mx-5 py-32 z-10 relative min-h-screen ">
-        <div className="w-full md:w-1/2">
+      <div className=" grid place-items-center  max-w-screen-xl  xl:mx-auto mx-5  z-10 relative py-36">
+        <div className="w-full md:w-2/3">
           <div className=" w-fit  ">Projects</div>
           <h1 className="text-4xl font-bold leading-normal z-10">
             Sneak Peek into My Creations
@@ -68,27 +67,113 @@ const ProjectSec: React.FC = () => {
             Check my Github
           </button>
         </div>
-        <div className="w-full md:w-1/2"> image </div>
       </div>
       <Image
         src="/assets/bg-elements/purple.svg"
         alt="purple"
         height={800}
         width={800}
-        className="absolute -top-16 -left-36 rotate-90 z-0"
+        className="absolute top-16 left-36  z-0"
         data-scroll
         data-scroll-speed="0.3"
       />
-
       <Image
         src="/assets/bg-elements/pink.svg"
         alt="purple"
         height={700}
         width={700}
-        className="absolute top-0 rotate-90 -left-32 z-0"
+        className="absolute top-32 right-0 z-0"
+        data-scroll
+        data-scroll-speed="0.8"
+      />
+      <Image
+        src="/assets/bg-elements/green.svg"
+        alt="purple"
+        height={700}
+        width={700}
+        className="absolute top-32 left-32 z-0"
         data-scroll
         data-scroll-speed="0.4"
       />
+      {/* Galary section */}
+
+      <div className="p-5 grid grid-flow-col-dense justify-center gap-2 h-full pb-36">
+        <div className=" flex flex-col gap-2">
+          <div
+            className=" h-64 w-64 rounded-lg"
+            style={{
+              background: "url('/assets/projects/13.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+          <div
+            className=" h-64 w-64 rounded-lg"
+            style={{
+              background: "url('/assets/projects/22.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+        <div className=" flex flex-col gap-2">
+          <div
+            className=" h-64 w-64 rounded-lg"
+            style={{
+              background: "url('/assets/projects/25.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+          <div
+            className=" h-64 w-64 rounded-lg"
+            style={{
+              background: "url('/assets/projects/18.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+        <div
+          className=" flex flex-col gap-2  h-full w-96 rounded-lg"
+          style={{
+            background: "url('/assets/projects/1.jpg')",
+            backgroundSize: "cover",
+          }}
+        ></div>
+        <div className=" flex flex-col gap-2">
+          <div
+            className=" h-64 w-96 rounded-lg"
+            style={{
+              background: "url('/assets/projects/gitex.jpeg')",
+              backgroundSize: "cover",
+            }}
+          ></div>
+          <div
+            className=" h-64 w-96 rounded-lg"
+            style={{
+              background: "url('/assets/projects/9.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+        <div className=" flex flex-col gap-2">
+          <div className=" h-64 w-64">
+            <video muted autoPlay loop>
+              <source src="/assets/projects/v1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div
+            className=" h-64 w-64 rounded-lg"
+            style={{
+              background: "url('/assets/projects/8.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+      </div>
     </section>
   );
 };
