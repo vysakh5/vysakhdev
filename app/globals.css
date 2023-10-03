@@ -81,3 +81,17 @@ body {
 .bg-video-overlay{
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.945) 40%, rgba(36, 35, 35, 0.496) 100%);
 }
+
+.skill-card{
+  background:url("/assets/skills/bg.svg") ;
+  background-position: top left;
+  background-size: 200% 200% ;
+  transition: all ease-in-out 0.25s;
+  border: 1px solid rgb(13, 13, 13);
+
+}
+
+.skill-card:hover{
+  background-size: 110% 110% ;
+
+}
