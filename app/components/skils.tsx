@@ -227,7 +227,6 @@ const SkilsSec: React.FC = () => {
         scrub: true,
         start: "200px",
         end: "bottom-=100px  ",
-        markers: true,
       },
     });
 
